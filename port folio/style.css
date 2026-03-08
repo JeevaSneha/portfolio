@@ -1,0 +1,162 @@
+/* =========================
+Anime Style Background
+========================= */
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+color:white;
+text-align:center;
+background:linear-gradient(270deg,#5f0a87,#a4508b,#7f00ff,#e100ff);
+background-size:800% 800%;
+animation:animeBG 15s ease infinite;
+}
+
+/* Background animation */
+
+@keyframes animeBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* =========================
+Navigation Menu
+========================= */
+
+nav{
+display:flex;
+justify-content:center;
+margin-top:20px;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+padding:0;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+border:2px solid white;
+padding:10px 20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+background:white;
+color:#7f00ff;
+}
+
+/* =========================
+Header
+========================= */
+
+header{
+margin-top:40px;
+}
+
+#typing{
+font-size:2.5rem;
+font-weight:bold;
+}
+
+/* =========================
+Section Boxes
+========================= */
+
+section{
+width:60%;
+margin:40px auto;
+padding:30px;
+border-radius:15px;
+border:2px solid rgba(255,255,255,0.3);
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+transition:transform 0.4s,box-shadow 0.4s;
+}
+
+section:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #d8b4ff;
+}
+
+/* =========================
+Skills
+========================= */
+
+#skills ul{
+list-style:none;
+padding:0;
+}
+
+#skills li{
+padding:6px;
+}
+
+/* =========================
+Project Cards
+========================= */
+
+.project{
+border:1px solid rgba(255,255,255,0.4);
+padding:15px;
+margin:15px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px #d8b4ff;
+}
+
+/* =========================
+Footer
+========================= */
+
+footer{
+margin-top:40px;
+padding:15px;
+font-size:14px;
+}
+
+
+/* Sakura Petals Animation */
+
+.sakura-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+}
+
+.petal{
+position:absolute;
+top:-10px;
+width:15px;
+height:15px;
+background:pink;
+border-radius:50% 50% 50% 0;
+opacity:0.8;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-10px) rotate(0deg);
+}
+100%{
+transform:translateY(100vh) rotate(360deg);
+}
+}
+
+
+
